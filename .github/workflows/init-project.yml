@@ -1,13 +1,20 @@
-# Use the common init workflow from your shared repo
-name: Init From Template
+name: Initialize Repo From Template
 
 on:
   push:
     branches:
       - main
     paths:
-      - '.github/workflows/init-project.yml'
+      - 'pom.xml'
+      - 'src/**'
 
 jobs:
-  call-init:
-    uses: Event-Based-Banking-Application/arya-banking-workflows/.github/workflows/init-project.yml@main
+  init:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run shared init script
+        uses: Event-Based-Banking-Application/arya-banking-workflows/.github/actions/init-project@main
