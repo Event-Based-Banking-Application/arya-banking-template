@@ -1,0 +1,13 @@
+# Use the common init workflow from your shared repo
+name: Init From Template
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/init-project.yml'
+
+jobs:
+  call-init:
+    uses: Event-Based-Banking-Application/arya-banking-workflows/.github/workflows/init-project.yml@main

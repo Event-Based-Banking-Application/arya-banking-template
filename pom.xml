@@ -10,7 +10,7 @@
     </parent>
     <groupId>org.arya.banking</groupId>
     <artifactId>arya-banking-template</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>arya-banking-template</name>
     <description>arya-banking-template</description>
     <url>https://github.com/Event-Based-Banking-Application/arya-banking-common</url>
