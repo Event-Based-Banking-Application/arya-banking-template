@@ -1,20 +1,15 @@
-name: Initialize Repo From Template
+name: Initialize From Template
 
 on:
   push:
     branches:
       - master
     paths:
-      - 'pom.xml'
-      - 'src/**'
+      - '.github/workflows/init-project.yml'
 
 jobs:
   init:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Run shared init script
-        uses: Event-Based-Banking-Application/arya-banking-workflows/.github/workflows/init-project@main
+      - name: Use common init action
+        uses: Event-Based-Banking-Application/arya-banking-workflows/.github/actions/init-project@main
