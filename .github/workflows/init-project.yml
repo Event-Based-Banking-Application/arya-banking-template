@@ -17,4 +17,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run shared init script
-        uses: Event-Based-Banking-Application/arya-banking-workflows/.github/actions/init-project@main
+        uses: Event-Based-Banking-Application/arya-banking-workflows/.github/workflows/init-project@main
