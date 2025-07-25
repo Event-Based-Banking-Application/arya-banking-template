@@ -11,5 +11,5 @@ jobs:
   init:
     runs-on: ubuntu-latest
     steps:
-      - name: Use common init action
-        uses: Event-Based-Banking-Application/arya-banking-workflows/.github/workflows/init-project@main
+      - name: Run init project action from shared repo
+        uses: Event-Based-Banking-Application/arya-banking-workflows/.github/actions/init-project@main
