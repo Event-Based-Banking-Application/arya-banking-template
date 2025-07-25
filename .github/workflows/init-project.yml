@@ -3,7 +3,7 @@ name: Initialize Repo From Template
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - 'pom.xml'
       - 'src/**'
