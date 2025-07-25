@@ -5,6 +5,7 @@ target/
 mvnw
 mvnw.cmd
 .mvn
+add-secrets.sh
 
 ### STS ###
 .apt_generated
